@@ -363,9 +363,9 @@
     </div>
 
     <div class="col-8 m-auto pt-4 pb-2 text-center">
-        <strong>Nome: </strong>{{db.nome}}<br>
-        <strong>CEP: </strong>{{db.cep}}<br>
-        <strong>Senha: </strong>{{db.senha}}<br>
+        <strong href="dados1">Nome: </strong>{{db.nome}}<br>
+        <strong href="dados2">CEP: </strong>{{db.cep}}<br>
+        <strong href="dados3">Senha: </strong>{{db.senha}}<br>
     </div>
 
     <section class="about">
@@ -406,6 +406,10 @@
                 $(".about-container ul:nth-child(2) li:nth-child(1) a").text("Colaboradores");
                 $(".about-container ul:nth-child(2) li:nth-child(2) a").text("(nomes)");
                 $(".about-container ul:nth-child(2) li:nth-child(3) a").text("Feedback");
+
+                $(".btn btn-info a").text("Return");
+                $(".dados1").text("Name:");
+                $("col-8 m-auto pt-4 pb-2 text-center").children().eq(1).text("Name:")
             });
         });
         

@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class Usuario(models.Model):
     nome = models.CharField(max_length=150)
     cep = models.CharField(max_length=8)
@@ -23,3 +22,7 @@ class Funcionario(models.Model):
 
     def template(self, atributo):
         return atributo(choices=self.NOTAS)
+    
+    def soma(self):
+        return self.atendimento + self.pontualidade + self.qualidade
+    #usar p/ funcionalidade xp

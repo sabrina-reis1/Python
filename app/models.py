@@ -2,7 +2,7 @@ from django.db import models
 
 class Usuario(models.Model):
     nome = models.CharField(max_length=150)
-    cep = models.CharField(max_length=8)
+    endereco = models.CharField(max_length=50)
     senha = models.CharField(max_length=6)
 
 class Funcionario(models.Model):

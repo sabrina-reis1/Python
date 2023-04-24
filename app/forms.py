@@ -6,7 +6,7 @@ from app.models import Funcionario
 class UsuarioForm(ModelForm):
     class Meta:
         model = Usuario
-        fields = ['nome', 'cep', 'senha']
+        fields = ['nome', 'endereco', 'senha']
 
 class FuncionarioForm(ModelForm):
     class Meta:
